@@ -1,0 +1,39 @@
+syntax = "proto3";
+option java_package = "com.lawsofnature.apigateway.domain.http";
+message SendLoginVerificationCodeReq {
+    int32 deviceType = 1;
+    string fingerPrint = 2;
+    string mobile = 3;
+    bool resend = 4;
+    int32 lastChannel = 5;
+    string ext1 = 6;
+    string ext2 = 7;
+    string ext3 = 8;
+    string ext4 = 9;
+    string ext5 = 10;
+}
+
+message LoginReq {
+    int32 clientId = 1;
+    int32 deviceType = 2;
+    string fingerPrint = 3;
+    string mobile = 4;
+    string verificationCode = 5;
+    string ext1 = 6;
+    string ext2 = 7;
+    string ext3 = 8;
+    string ext4 = 9;
+    string ext5 = 10;
+}
+
+message AutoLoginReq {
+    int32 clientId = 1;
+    int32 deviceType = 2;
+    string fingerPrint = 3;
+    string token = 4;
+    string ext1 = 5;
+    string ext2 = 6;
+    string ext3 = 7;
+    string ext4 = 8;
+    string ext5 = 9;
+}

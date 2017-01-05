@@ -1,0 +1,15 @@
+syntax = "proto3";
+option java_package = "com.lawsofnature.sms.domain.mq";
+message SmsMessage {
+    string traceId = 1;
+    int64 ip = 2;
+    int32 deviceType = 3;
+	string fingerPrint = 4;
+	int64 memberId = 5;
+    int32 smsType = 6;
+	string mobile = 7;
+	int32 channel = 8;
+	bool resend = 9;
+	int32 lastChannel = 10;
+	string content = 11;
+}
