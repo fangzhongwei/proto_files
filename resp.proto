@@ -3,7 +3,16 @@ option java_package = "com.lawsofnature.apigateway.domain.http";
 
 message SimpleApiResponse {
     string code = 1;
-    string msg = 2;
+    string ext1 = 2;
+    string ext2 = 3;
+    string ext3 = 4;
+    string ext4 = 5;
+    string ext5 = 6;
+}
+
+message SendLoginVerificationCodeResp {
+    string code = 1;
+    int32 channel = 2;
     string ext1 = 3;
     string ext2 = 4;
     string ext3 = 5;
@@ -11,27 +20,15 @@ message SimpleApiResponse {
     string ext5 = 7;
 }
 
-message SendLoginVerificationCodeResp {
-    string code = 1;
-    string msg = 2;
-    int32 channel = 3;
-    string ext1 = 4;
-    string ext2 = 5;
-    string ext3 = 6;
-    string ext4 = 7;
-    string ext5 = 8;
-}
-
 message LoginResp {
     string code = 1;
-    string msg = 2;
-    string token = 3;
-    string key = 4;
-    string mobile = 5;
-    string NickName = 6;
-    string ext1 = 7;
-    string ext2 = 8;
-    string ext3 = 9;
-    string ext4 = 10;
-    string ext5 = 11;
+    string token = 2;
+    string mobile = 3;
+    int32 status = 4;
+    string nickName = 5;
+    string ext1 = 6;
+    string ext2 = 7;
+    string ext3 = 8;
+    string ext4 = 9;
+    string ext5 = 10;
 }

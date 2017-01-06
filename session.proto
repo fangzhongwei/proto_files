@@ -1,0 +1,14 @@
+syntax = "proto3";
+option java_package = "com.lawsofnature.sso.domain.cache";
+message SessionCache {
+    string token = 1;
+	int32 clientId = 2;
+    int64 ip = 3;
+    int32 deviceType = 4;
+	string fingerPrint = 5;
+	int32 status = 6;
+	int64 memberId = 7;
+    string identity = 8;
+	string identityTicket = 9;
+	int64 gmtCreate = 10;
+}
