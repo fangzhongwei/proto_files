@@ -1,0 +1,10 @@
+syntax = "proto3";
+option java_package = "com.lawsofnature.apigateway.domain.http.req";
+message UpdateNickNameReq {
+	string nickName = 1;
+    string ext1 = 2;
+    string ext2 = 3;
+    string ext3 = 4;
+    string ext4 = 5;
+    string ext5 = 6;
+}

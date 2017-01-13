@@ -3,12 +3,13 @@ option java_package = "com.lawsofnature.sso.domain.cache";
 message SessionCache {
     string token = 1;
 	int32 clientId = 2;
-    int64 ip = 3;
-    int32 deviceType = 4;
-	string fingerPrint = 5;
-	int32 status = 6;
-	int64 memberId = 7;
-    string identity = 8;
-	string identityTicket = 9;
-	int64 gmtCreate = 10;
+    string version = 3;
+    int64 ip = 4;
+    int32 deviceType = 5;
+	string fingerPrint = 6;
+	int32 status = 7;
+	int64 memberId = 8;
+    string identity = 9;
+	string identityTicket = 10;
+	int64 gmtCreate = 11;
 }

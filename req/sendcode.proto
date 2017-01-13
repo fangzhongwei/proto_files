@@ -1,0 +1,14 @@
+syntax = "proto3";
+option java_package = "com.lawsofnature.apigateway.domain.http.req";
+message SendLoginVerificationCodeReq {
+    int32 deviceType = 1;
+    string fingerPrint = 2;
+    string mobile = 3;
+    bool resend = 4;
+    int32 lastChannel = 5;
+    string ext1 = 6;
+    string ext2 = 7;
+    string ext3 = 8;
+    string ext4 = 9;
+    string ext5 = 10;
+}

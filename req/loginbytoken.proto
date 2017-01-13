@@ -1,0 +1,14 @@
+syntax = "proto3";
+option java_package = "com.lawsofnature.apigateway.domain.http.req";
+message LoginByTokenReq {
+    int32 clientId = 1;
+	string version = 2;
+    int32 deviceType = 3;
+    string fingerPrint = 4;
+    string token = 5;
+    string ext1 = 6;
+    string ext2 = 7;
+    string ext3 = 8;
+    string ext4 = 9;
+    string ext5 = 10;
+}

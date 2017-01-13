@@ -1,0 +1,16 @@
+syntax = "proto3";
+option java_package = "com.lawsofnature.apigateway.domain.http.req";
+
+message LoginReq {
+    int32 clientId = 1;
+	string version = 2;
+    int32 deviceType = 3;
+    string fingerPrint = 4;
+    string mobile = 5;
+    string verificationCode = 6;
+    string ext1 = 7;
+    string ext2 = 8;
+    string ext3 = 9;
+    string ext4 = 10;
+    string ext5 = 11;
+}
