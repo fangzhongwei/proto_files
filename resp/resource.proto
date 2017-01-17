@@ -1,0 +1,26 @@
+syntax = "proto3";
+option java_package = "com.lawsofnature.apigateway.domain.http.resp";
+
+message Resource {
+	int32 version = 1;
+	int32 resourceType = 2;
+	string code = 3;
+	string lan = 4;
+	string desc = 5;
+    string ext1 = 6;
+    string ext2 = 7;
+    string ext3 = 8;
+    string ext4 = 9;
+    string ext5 = 10;
+}
+
+message ResourceResp {
+    string code = 1;
+    int32 latestVersion = 2;
+	repeated Resource list = 3;
+    string ext1 = 4;
+    string ext2 = 5;
+    string ext3 = 6;
+    string ext4 = 7;
+    string ext5 = 8;
+}

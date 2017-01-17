@@ -1,0 +1,20 @@
+syntax = "proto3";
+option java_package = "com.lawsofnature.apigateway.domain.http.resp";
+
+message DepositRecordResp {
+	string code = 1;
+	string paymentVoucherNo = 2;
+	int64 accountId = 3;
+	int64 memberId = 4;
+	int32 tradeType = 5;
+	int32 tradeStatus = 6;
+	int32 diamondAcount = 7;
+	string amount = 8;
+	string gmtCreate = 9;
+	string gmtUpdate = 10;
+    string ext1 = 11;
+    string ext2 = 12;
+    string ext3 = 13;
+    string ext4 = 14;
+    string ext5 = 15;
+}

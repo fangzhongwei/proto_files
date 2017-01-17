@@ -1,0 +1,12 @@
+syntax = "proto3";
+option java_package = "com.lawsofnature.apigateway.domain.http.req";
+
+message PullResourceReq {
+    int32 version = 1;
+	string lan = 2;
+    string ext1 = 3;
+    string ext2 = 4;
+    string ext3 = 5;
+    string ext4 = 6;
+    string ext5 = 7;
+}
